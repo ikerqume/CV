@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - My Web CV</title>
+    <link rel="stylesheet" href="../../css/estils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>My Web CV</h1>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index_en.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="education.html" class="active"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="../estudis.html"><i class="fas fa-language"></i> Español</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="education">
+            <h2><i class="fas fa-graduation-cap"></i> Academic Background</h2>
+            
+            <div class="education-item">
+                <div class="education-date">
+                    <i class="fas fa-calendar-alt"></i> 2022 - 2025
+                </div>
+                <div class="education-content">
+                    <h3>Higher Technical Certificate in Web Application Development</h3>
+                    <p class="institution"><i class="fas fa-school"></i> Institut Joan XXIII, Barcelona</p>
+                    <p>Specialized training in web application development, including frontend and backend technologies, databases, and object-oriented design and programming.</p>
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-date">
+                    <i class="fas fa-calendar-alt"></i> 2020 - 2022
+                </div>
+                <div class="education-content">
+                    <h3>Technological Baccalaureate</h3>
+                    <p class="institution"><i class="fas fa-school"></i> IES Example, Barcelona</p>
+                    <p>General education with emphasis on mathematics, physics, and technology.</p>
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-date">
+                    <i class="fas fa-calendar-alt"></i> 2016 - 2020
+                </div>
+                <div class="education-content">
+                    <h3>Compulsory Secondary Education (ESO)</h3>
+                    <p class="institution"><i class="fas fa-school"></i> IES Example, Barcelona</p>
+                    <p>Complete general education with good academic performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2><i class="fas fa-map-marker-alt"></i> Location of Institut Joan XXIII</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.5974029665105!2d2.106382076536298!3d41.40290377129249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4985c8a7de4ef%3A0xee2d5b6f0a33cb7e!2sInstitut%20Joan%20XXIII!5e0!3m2!1sen!2ses!4v1712965205694!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> youremail@example.com</p>
+                <p><i class="fas fa-phone"></i> +34 600 000 000</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 My Web CV - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

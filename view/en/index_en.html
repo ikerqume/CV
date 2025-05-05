@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web CV</title>
+    <link rel="stylesheet" href="../../css/estils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>My Web CV</h1>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index_en.html" class="active"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="../../index.html"><i class="fas fa-language"></i> Español</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile-image">
+                <img src="../../img/perfil.jpg" alt="My profile picture">
+            </div>
+            <div class="profile-info">
+                <h2>Personal Information</h2>
+                <p><i class="fas fa-user"></i> <strong>Name:</strong> Your Full Name</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> youremail@example.com</p>
+                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +34 600 000 000</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Barcelona, Spain</p>
+                <p><i class="fas fa-calendar-alt"></i> <strong>Date of birth:</strong> 01/01/2000</p>
+            </div>
+        </section>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a technology and web development enthusiast. I love solving problems and creating innovative solutions through code.</p>
+            
+            <h3>Hobbies and Interests</h3>
+            <ul>
+                <li><i class="fas fa-code"></i> Programming and web development</li>
+                <li><i class="fas fa-book"></i> Reading science and technology books</li>
+                <li><i class="fas fa-hiking"></i> Hiking and outdoor activities</li>
+                <li><i class="fas fa-gamepad"></i> Strategy video games</li>
+                <li><i class="fas fa-music"></i> Listening to alternative music</li>
+            </ul>
+            
+            <h3>Get to Know Me Better</h3>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="Personal introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> youremail@example.com</p>
+                <p><i class="fas fa-phone"></i> +34 600 000 000</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 My Web CV - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
