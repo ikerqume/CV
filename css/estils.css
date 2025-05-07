@@ -1,17 +1,19 @@
-/* Estilos generales */
-* {
+/* ESTILOS GENERALES */
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Configuración básica del cuerpo de la página */
 body {
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
 }
 
+/* Estilos para enlaces */
 a {
     text-decoration: none;
     color: #0366d6;
@@ -22,15 +24,18 @@ a:hover {
     color: #0056b3;
 }
 
+/* Eliminación de marcadores de lista */
 ul {
     list-style-type: none;
 }
 
+/* Configuración de títulos */
 h1, h2, h3, h4 {
     margin-bottom: 15px;
     color: #24292e;
 }
 
+/* Configuración de secciones con sombra y bordes redondeados */
 section {
     margin-bottom: 40px;
     background-color: #fff;
@@ -39,7 +44,7 @@ section {
     padding: 25px;
 }
 
-/* Header y Navegación */
+/* HEADER Y NAVEGACIÓN*/
 header {
     background-color: #24292e;
     color: #fff;
@@ -48,6 +53,7 @@ header {
     z-index: 100;
 }
 
+/* Contenedor de la barra de navegación */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -57,17 +63,20 @@ header {
     margin: 0 auto;
 }
 
+/* Estilo del logo */
 .logo h1 {
     font-size: 1.5rem;
     margin: 0;
     color: #fff;
 }
 
+/* Contenedor de los enlaces de navegación */
 .nav-links {
     display: flex;
     gap: 20px;
 }
 
+/* Estilos para los enlaces de navegación */
 .nav-links li a {
     color: #fff;
     padding: 8px 12px;
@@ -75,30 +84,33 @@ header {
     transition: background-color 0.3s ease;
 }
 
+/* Estado hover y activo de los enlaces */
 .nav-links li a:hover, .nav-links li a.active {
     background-color: #0366d6;
 }
 
+/* Botón de menú (oculto por defecto) */
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-/* Main Content */
+/* CONTENIDO PRINCIPAL */
 main {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* Profile Section */
+/* SECCIÓN DE PERFIL */
 .profile {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
+/* Contenedor de la imagen de perfil */
 .profile-image {
     flex: 0 0 200px;
 }
@@ -107,6 +119,7 @@ main {
     width: 100%;
 }
 
+/* Contenedor de la información de perfil */
 .profile-info {
     flex: 1;
 }
@@ -115,7 +128,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* About Me Section */
+/* SECCIÓN SOBRE MÍ */
 .about-me h3 {
     margin-top: 20px;
     color: #0366d6;
@@ -135,9 +148,10 @@ main {
     color: #0366d6;
 }
 
+/* Contenedor para videos con relación de aspecto 16:9 */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -153,7 +167,7 @@ main {
     border-radius: 8px;
 }
 
-/* Education Section */
+/* SECCIÓN DE EDUCACIÓN */
 .education-item {
     display: flex;
     gap: 20px;
@@ -168,26 +182,29 @@ main {
     margin-bottom: 0;
 }
 
+/* Estilo para la fecha de educación */
 .education-date {
     flex: 0 0 150px;
     font-weight: bold;
     color: #0366d6;
 }
 
+/* Contenedor para la descripción de la educación */
 .education-content {
     flex: 1;
 }
 
+/* Estilo para el nombre de la institución */
 .institution {
     font-style: italic;
     margin-bottom: 10px;
     color: #666;
 }
 
-/* Map Section */
+/*SECCIÓN DE MAPA*/
 .map-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -203,7 +220,7 @@ main {
     border-radius: 8px;
 }
 
-/* Experience Section */
+/* SECCIÓN DE EXPERIENCIA */
 .experience-item {
     display: flex;
     gap: 20px;
@@ -218,22 +235,26 @@ main {
     margin-bottom: 0;
 }
 
+/* Estilo para la fecha de experiencia */
 .experience-date {
     flex: 0 0 150px;
     font-weight: bold;
     color: #0366d6;
 }
 
+/* Contenedor para la descripción de la experiencia */
 .experience-content {
     flex: 1;
 }
 
+/* Estilo para el nombre de la empresa */
 .company {
     font-style: italic;
     margin-bottom: 10px;
     color: #666;
 }
 
+/* Estilo para las responsabilidades */
 .responsibilities h4 {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -250,6 +271,7 @@ main {
     padding-left: 5px;
 }
 
+/* Puntos personalizados para la lista de responsabilidades */
 .responsibilities li::before {
     content: "•";
     position: absolute;
@@ -257,13 +279,14 @@ main {
     color: #0366d6;
 }
 
-/* Skills Section */
+/* SECCIÓN DE HABILIDADES */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
+/* Estilo para cada elemento de habilidad */
 .skill-item {
     flex: 1 1 250px;
     background-color: #f8f9fa;
@@ -293,13 +316,14 @@ main {
     color: #0366d6;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     background-color: #24292e;
     color: #fff;
     padding: 30px 20px 15px;
 }
 
+/* Contenedor principal del footer */
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -308,6 +332,7 @@ footer {
     margin: 0 auto;
 }
 
+/* Estilo para cada sección del footer */
 .footer-section {
     flex: 1 1 300px;
     margin-bottom: 20px;
@@ -320,6 +345,7 @@ footer {
     margin-bottom: 15px;
 }
 
+/* Contenedor para iconos sociales */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -336,6 +362,7 @@ footer {
     color: #0366d6;
 }
 
+/* Sección inferior del footer */
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -343,8 +370,19 @@ footer {
     border-top: 1px solid #444;
 }
 
-/* Responsive Styles */
+/* Estilo para iconos en la navegación */
+.nav-links li a i {
+    margin-right: 5px;
+}
+
+/* Clase para el texto de navegación */
+.nav-text {
+    display: inline; /* Por defecto, el texto es visible */
+}
+
+/* ESTILOS RESPONSIVOS */
 @media screen and (max-width: 768px) {
+    /* Cambios en la sección de perfil para dispositivos medianos */
     .profile {
         flex-direction: column;
         text-align: center;
@@ -355,6 +393,7 @@ footer {
         margin: 0 auto;
     }
     
+    /* Ajuste de elementos de educación y experiencia */
     .education-item, .experience-item {
         flex-direction: column;
         gap: 10px;
@@ -365,47 +404,136 @@ footer {
         margin-bottom: 5px;
     }
     
+    /* Ajustes para el footer */
+    .footer-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    
+    .footer-section {
+        flex: 1 1 45%;
+        min-width: 250px;
+    }
+    
+    .footer-section:last-child {
+        margin-right: auto;
+    }
+    
+    /* Mostrar solo iconos en la navegación (ocultar texto) */
+    .nav-text {
+        display: none;
+    }
+    
+    .nav-links li a i {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+    
+    .nav-links li a {
+        padding: 8px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 500px) {
+    /* Mantener el header visible */
+    header {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    /* Configuración de la navegación en pantallas pequeñas */
+    .nav-links {
+        position: static; 
+        display: flex;
+        flex-direction: row; 
+        max-height: none; 
+        overflow: visible; 
+        width: auto;
+        background-color: transparent;
+        gap: 15px; 
+    }
+    
+    .nav-links li {
+        width: auto;
+    }
+    
+    .nav-links li a {
+        padding: 8px; 
+        border-radius: 4px;
+    }
+    
+    /* Ocultar texto y mostrar solo iconos */
+    .nav-text {
+        display: none;
+    }
+    
+    .nav-links li a i {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+    
+    /* Mantener el estilo activo */
+    .nav-links li a.active {
+        background-color: #0366d6;
+        border-bottom: none;
+    }
+    
+    /* Ajustes del footer para pantallas pequeñas */
     .footer-content {
         flex-direction: column;
         gap: 20px;
     }
-}
-
-@media screen and (max-width: 500px) {
-    .menu-toggle {
-        display: block;
-    }
     
-    .nav-links {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #24292e;
+    /* Centrado de elementos del footer */
+    .footer-section {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-    
-    .nav-links.active {
-        max-height: 300px;
-    }
-    
-    .nav-links li {
-        width: 100%;
         text-align: center;
     }
     
-    .nav-links li a {
-        display: block;
-        padding: 15px;
-        border-radius: 0;
+    .footer-section h3 {
+        text-align: center;
     }
     
-    .skill-item {
-        flex: 1 1 100%;
+    .social-icons {
+        justify-content: center;
+    }
+    
+    /* Centrado perfecto de enlaces y párrafos */
+    .footer-section a,
+    .footer-section p {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        padding-top: 15px;
+        margin-top: 15px;
+        font-size: 0.9rem;
     }
 }
