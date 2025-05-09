@@ -1,5 +1,5 @@
 /* ESTILOS GENERALES */
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -117,6 +117,7 @@ main {
 
 .profile-image img {
     width: 100%;
+    border-radius: 8px;
 }
 
 /* Contenedor de la información de perfil */
@@ -389,8 +390,17 @@ footer {
     }
     
     .profile-image {
-        flex: 0 0 150px;
-        margin: 0 auto;
+        flex: 0 0 auto;
+        max-width: 200px !important; 
+        width: 200px !important;
+        height: auto !important;
+        margin: 0 auto 20px;
+    }
+    
+    .profile-image img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
     }
     
     /* Ajuste de elementos de educación y experiencia */
@@ -459,6 +469,14 @@ footer {
     
     .menu-toggle {
         display: none;
+    }
+    
+    /* Ajuste específico para la imagen de perfil en móviles */
+    .profile-image {
+        max-width: 200px !important; 
+        width: 200px !important;
+        height: auto !important;
+        margin: 0 auto 15px;
     }
     
     /* Configuración de la navegación en pantallas pequeñas */
